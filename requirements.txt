@@ -1,5 +1,7 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.2.0+cpu
+# Use a CPU wheel that is available on the PyPI + PyTorch CPU index Streamlit uses.
+# Torch 2.2.0+cpu is not available there; pin to a recent available CPU build.
+torch==2.9.1+cpu
 ultralytics
 streamlit
 Pillow
